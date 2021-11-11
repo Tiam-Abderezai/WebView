@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebView</string>
+    <string name="website_url">https://quaestio.org</string>
+    <string name="home_url">file:///android_asset/index.html</string>
+</resources>

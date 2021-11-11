@@ -1,0 +1,209 @@
+/* Import css files */
+@import "header.css";
+@import "post.css";
+@import "footer.css";
+
+
+/* Global styles  */
+body {
+    background: #2e3440;
+    box-sizing: content-box;
+    color: #81a1c1;
+    font-family: Hack, monospace;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: left;
+    overflow-y: visible;
+    padding: 1rem 2rem;
+    max-width: available;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+html {
+   margin:0;
+   padding:0;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+
+main {
+    margin-bottom: 10rem;
+}
+
+
+/* Main content */
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.main-section {
+    display: flex;
+    align-items: center;
+    align-content: end;
+    margin-left: 120px;
+    line-height: 1.5;
+}
+
+.main-section-intro p {
+    color: #555;
+    text-align: justify;
+    text-justify: inter-character;
+    font-weight: 400;
+}
+
+
+.recent-writing-button {
+    display: inline-block;
+    background-color: #f1f3f4 ;
+    border-radius: 9px;
+    padding: 0.5rem; 
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.62);
+    margin-left: 1.3rem;
+}
+
+
+.recent-writing-button:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+
+/* Media query */
+/* Mobile screen */
+@media screen and (min-width:0px) and (max-width:0px) {
+    .avatar,
+    .navbar-title,
+    .Family-name {
+        display: none;
+    }
+    
+    
+    .main {
+        margin: 11.25rem 0.7rem 0 0.7rem;
+        line-height: 1.5;
+    }
+    
+    
+    .main-section h1 {
+        font-size: 1.4rem ;
+    }
+    
+    
+    .main-section p {
+        font-size: 1.2rem ;
+    }
+    
+    
+    .nav-container a {
+        font-size: 1.2rem;
+    }
+
+    
+    .header-titles a {
+        font-size: 1.1rem;
+    }
+    
+    
+    .posts-section {
+        margin-top: 5.4rem;
+    }
+    
+    
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* tablet screen */
+@media (min-width:600px) and (max-width:1024px) {
+    .main {
+        margin: 11.25rem 0.7rem 0 0.7rem;
+    }
+    
+    
+    .main-section p {
+        font-size: 1.2rem;
+    }
+
+    
+    .avatar {
+        height: 5rem;
+        border-radius: 50%;
+        width: 5rem;
+        opacity: 0.9; 
+        margin: 0 0 0 0rem;
+    }
+    
+    
+    .main-section-intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    
+    .footer div {
+        margin: 1.3rem;
+    }
+    
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+} 
+
+
+@media screen and (min-width:600px) and (max-width:722px){
+    .avatar {
+        display: none;
+    }
+}
+
+
+
+/* this will apply to viewports with a min width of 1024px and above */
+@media screen and (min-width:1024px) {
+    .main-section-intro h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    
+    .main-section-intro p {
+        font-size: 1.2rem;
+        max-width: 550px;
+    }
+    
+    
+    .avatar {
+        width: 220px;
+        height: 200px;
+        left: 962px;
+        top: 274px;
+        border-radius: 50%;
+        opacity: 0.9;
+        margin: 0 0 0 3.6rem;;
+    }
+    
+    
+    .footer {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+}

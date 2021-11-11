@@ -1,0 +1,205 @@
+/* Import css files */
+@import "header.css";
+@import "footer.css";
+
+
+/* Global styles  */
+body {
+    background: #2e3440;
+    box-sizing: content-box;
+    color: #81a1c1;
+    font-family: Hack, monospace;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: left;
+    overflow-y: visible;
+    padding: 1rem 2rem;
+    max-width: available;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+
+html {
+   min-height: 100%;
+   margin:0;
+   padding:0;
+
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+
+/* Main content */
+main {
+    margin-bottom: 10rem;
+}
+
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Article-title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Article-title-section h1 {
+    font-size: 2.4rem;
+    font-weight: 900; 
+}
+
+
+.article-header {
+    margin-bottom: 3rem;  
+}
+
+
+.author-section {
+    color: rgb(148, 145, 145);
+    font-size: 0.79rem;
+    font-weight: 200;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.author-info {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 0.89rem;
+    color: rgba(0,0,0,.6);
+    font-weight: 200;
+}
+
+
+.author-section h4,h5 {
+    font-weight: 200;
+ 
+}
+
+
+.author-avatar {
+    border-radius: 50%;
+    width: 55px;
+    max-width: 55px;
+    height: auto;
+    margin-right: 0.75rem;
+    justify-content: flex-start; 
+}
+
+
+.author-name {
+    font-size: 1rem;
+    color: rgba(0,0,0,.6);
+    font-weight: 200;
+}
+
+
+.article-date {
+    color: white;
+    font-family: Hack, monospace;
+    font-size: 0.90rem;
+    margin-bottom: 1.8rem;
+    margin-top: -26px;
+    font-weight: 200;
+}
+
+
+.article-date::after {
+    content: "|";
+    margin-left: 0.3rem;
+    display: inline;
+}
+
+
+.post-info {
+    margin-top: -20px;
+    color: rgba(0,0,0,.6);
+    margin-bottom: 2rem;
+    font-size: 0.90rem;
+}
+
+
+.post-info a:hover {
+    color: rgb(33, 38, 165);
+    font-weight: 500;
+}
+
+
+.Share-title {
+    margin-right: 0.3rem;
+    font-weight: 500;
+    display: block;
+}
+figcaption{
+    display: block;
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    .main {
+        margin: 11.25rem 1rem 0 1rem;
+        line-height: 1.5;
+        margin-bottom: 10rem;
+        font-size: 1rem;
+    }
+    
+    
+    .Article-title-section h1 {
+        font-size: 2rem;
+        font-weight: 900; 
+    }
+    
+    
+    .article-date {
+        font-size: 0.88rem;
+        margin-top: -20px;
+        font-weight: 200;
+    }
+    
+    
+    .author-avatar {
+        width: 50px;
+        max-width: 50px;
+    }
+
+    .tiam-dev-logo {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .author-name {
+        font-size: 0.8rem;
+    }
+    
+    
+    .social-media-share {
+        font-size: 0.84rem;
+        margin-top: 0.7rem;
+    }
+}
+
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .main {
+        margin: 11.25rem 1rem 10rem 1rem;
+    }
+    .footer{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
